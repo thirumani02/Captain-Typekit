@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Captain Typekit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-03 14:52+1000\n"
+"PO-Revision-Date: 2012-11-03 14:52+1000\n"
+"Last-Translator: \n"
+"Language-Team: Captain Theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../captain-typekit.php:40
+msgid "Settings"
+msgstr ""
+
+#: ../captain-typekit.php:85
+msgid "Captain Typekit"
+msgstr ""
+
+#: ../captain-typekit.php:96
+msgid "Captain Typekit Settings"
+msgstr ""
+
+#: ../captain-typekit.php:97
+#, php-format
+msgid ""
+"Enter the Typekit Kit ID for your Typekit kit below. Need Help? View "
+"%sCaptain Typekit Documentation%s."
+msgstr ""
+
+#: ../captain-typekit.php:105
+msgid "Typekit Kit ID"
+msgstr ""
+
+#: ../captain-typekit.php:110
+msgid "Save Settings"
+msgstr ""
+
+#: ../captain-typekit.php:115
+msgid "Kit Fonts Used"
+msgstr ""
+
+#: ../captain-typekit.php:118
+#, php-format
+msgid ""
+"In the table below you can find all the fonts contained in your Typekit Kit. "
+"You can use the %sFont Family CSS Value%s in your CSS, like so:"
+msgstr ""
+
+#: ../captain-typekit.php:126
+#, php-format
+msgid "Where %sproxima-nova%s is the Font Family CSS Value, "
+msgstr ""
+
+#: ../captain-typekit.php:126
+#, php-format
+msgid ""
+"and %ssans-serif%s is the fallback font for older browsers (it depends on "
+"the font classification what this value is)."
+msgstr ""
+
+#: ../captain-typekit.php:128
+#, php-format
+msgid ""
+"In the %sVariation/Weights%s column you'll find all the different Weights & "
+"Variations you've added to your Kit. You can use these in your CSS, like so:"
+msgstr ""
+
+#: ../captain-typekit.php:138
+#, php-format
+msgid ""
+"Forgot what the font looked like? Just view the font on Typekit by visitting "
+"the font's %sURL%s!"
+msgstr ""
+
+#: ../captain-typekit.php:182
+msgid "Italic"
+msgstr ""
+
+#: ../captain-typekit.php:234
+msgid "View on Typekit"
+msgstr ""
