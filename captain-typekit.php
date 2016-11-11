@@ -184,55 +184,14 @@ function cttypekit_render_form()
 			echo '</code></td><td>';
 			
 			$variations = $fontFamily->variations;
-			$italic = __( 'Italic', 'cttypekit' );
 			
 			// Dear Developers reading the following. I am SURE there is a better way to do the following, but at the time of writing this I couldn't think of it (especially due to be NOT REALLY being a plugin developer. I would love for you to let me know a better way. Better yet, make a pull request on the GitHub Repo for it. PS. I'm thinking like another foreach statement within the first one? With conditionals for stuff like Italic/Bold/etc.? Something like a switch is needed. Anyway, I'll worry about that real soon!
-			
+			$font_variations_list = '';
 			foreach ( $variations as $variation => $value ){
-				if ( $value == 'n3' ) {
-					echo '300';
-					if ( $value == 'n3' && 'i3' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '<br />';
-				} elseif ( $value == 'n4' ) {
-					echo '400';
-					if ( $value == 'n4' && 'i4' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '<br />';
-				} elseif ( $value == 'n5' ) {
-					echo '500';
-					if ( $value == 'n5' && 'i5' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '<br />';
-				} elseif ( $value == 'n6' ) {
-					echo '<strong>600';
-					if ( $value == 'n6' && 'i6' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '</strong><br />';
-				} elseif ( $value == 'n7' ) {
-					echo '<strong>700';
-					if ( $value == 'n7' && 'i7' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '</strong><br />';
-				} elseif ( $value == 'n8' ) {
-					echo '<strong>800';
-					if ( $value == 'n8' && 'i8' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '</strong><br />';
-				} elseif ( $value == 'n9' ) {
-					echo '<strong>900';
-					if ( $value == 'n9' && 'i9' ) {
-						echo ' <em>+ ' . $italic . '</em>';
-					}
-					echo '</strong><br />';
-				}
+				$font_variations_list .=  str_replace('n', '', $value).'00, ';
 			}
+			echo trim( $font_variations_list, ', ');
+			
 			echo '</td><td>';
 			
 			echo '<a href="http://typekit.com/fonts/' . $fontFamily->slug . '">';
